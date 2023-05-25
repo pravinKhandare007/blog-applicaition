@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const fileupload = require('express-fileupload');
+const fileupload = require('express-fileupload');   
 
 let initial_path = path.join(__dirname, "public");
 
@@ -10,6 +10,10 @@ app.use(fileupload());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(initial_path, "home.html"));
+})
+
+app.get('/landingPage',(req,res)=>{
+    res.sendFile(path.join(initial_path,'landingPage.html')); 
 })
 
 app.get('/editor', (req, res) => {
