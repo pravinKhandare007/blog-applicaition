@@ -1,21 +1,21 @@
 window.onscroll = function () {
-    myFunction();
+    myFunction2();
 }
 
 
-let bottomNavbar = document.getElementById("bottom-navbar-container");
-let bottomNavbarTopPosition = bottomNavbar.offsetTop;
+let bottomNavbar2 = document.getElementById("bottom-navbar-container");
+let bottomTopPosition = bottomNavbar2.offsetTop;
 
 let contentContainer = document.getElementById("content-container");
 
-function myFunction() {
+function myFunction2() {
     console.log("scrolling")
-    if (window.pageYOffset >= bottomNavbarTopPosition) {
+    if (window.pageYOffset >= bottomTopPosition) {
         contentContainer.classList.add("content");
-        bottomNavbar.classList.add("sticky");
+        bottomNavbar2.classList.add("sticky");
     }
     else {
-        bottomNavbar.classList.remove("sticky");
+        bottomNavbar2.classList.remove("sticky");
         contentContainer.classList.remove("content");
     }
 };
