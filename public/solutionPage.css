@@ -222,13 +222,11 @@ nav li ul {
 .container{
     display: flex;
     text-align: center;
-    
-    
+       
 }
 
 .item{
-    padding: 100px;
-    
+    padding: 10%;   
 }
 
 .container button{
@@ -300,14 +298,14 @@ nav li ul {
 }
 
 .content-block-3-container{
-    padding: 50px;
+    padding-top: 50px;
 }
 
 #content-block-3 {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 600px;
     /* background-color: #badcb5; */
   }
   
@@ -357,7 +355,22 @@ nav li ul {
     top: 13%;
     left: 25%;
   }
+  
+  .IoT-container{
+    text-align: center;
+    padding: 0% 5% 5%;
+  }
+  .IoT-container h1{
+    color: #3BB11E;
+  }
+  .IoT-image-container{
+    width: 100%;
+  }
 
+  .IoT-image-container img{
+    width: 100%;
+    object-fit: cover;
+  }
   
 .aboutus {
     display: flex;
