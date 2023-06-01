@@ -5,8 +5,14 @@ window.onscroll = function () {
 
 let bottomNavbar = document.getElementById("bottom-navbar-container");
 let bottomNavbarTopPosition = bottomNavbar.offsetTop;
-
 let contentContainer = document.getElementById("content-container");
+
+// couraseal 
+let courasel1 = document.getElementById("courasel-1");
+let courasel2 = document.getElementById("courasel-2");
+let courasel3 = document.getElementById("courasel-3");
+
+
 
 function myFunction() {
     console.log("scrolling")
