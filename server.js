@@ -41,7 +41,7 @@ app.post('/upload', (req, res) => {
 })
 
 app.get("/blog", (req, res) => {
-    res.sendFile(path.join(initial_path, "blog.html"));
+    res.sendFile(path.join(initial_path, "/blog.html"));
 })
 
 

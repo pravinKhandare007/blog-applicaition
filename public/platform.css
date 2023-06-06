@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-btn-color: #18d26e;
+    --nav-color: #FFFFFF;
+    --var-width: 100%;
+    --margin-bottom: 150px;
+  }
+  
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url('./fonts/outfit-regular-webfont.woff') format("woff");
+    /* src: url('./fonts/roboto-regular-webfont.woff') format("woff"); */
+}
+
+body {
+    margin: auto;
+    font-family: 'Roboto';
+}
+
+/* navbar css start */
+.top-navbar {
+    background-color: var(--bg-btn-color);
+    height: 50px;
+}
+
+.top-navbar ul {
+    text-align: right;
+    padding-top: 15px;
+}
+
+.top-navbar ul li {
+    margin-right: 20px;
+}
+
+#bottom-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: var(--nav-color);
+    
+}
+
+.bottom-navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.bottom-navbar>ul {
+    margin-top: 42px;
+}
+
+.bottom-navbar>ul li {
+    padding-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+
+nav li b {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+nav li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li a:hover {
+    /* color: rgb(63, 214, 63); */
+    color: #333;
+    text-decoration: underline;
+}
+
+nav li ul {
+    width: 300px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    padding: 300px;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    padding: 30px;
+}
+
+.btn-rounded {
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* background-color: #4285f4; */
+    background-color: rgb(52, 202, 52);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+/* navbar css finish */
+
+.brand {
+    width: 150px;
+    padding-left: 1%;
+}
+
+.brand img {
+    height: 100%;
+    object-fit: cover;
+
+}
+
+@media (max-width: 600px) {
+
+    .top-navbar,
+    .bottom-navbar {
+        display: none;
+    }
+
+    header {
+        padding: 10px;
+        background-color: #333;
+    }
+
+    .collapsed-navbar {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .collapsed-navbar:hover {
+        background-color: #555;
+    }
+}
+
+/* css for sticky bottom-navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 0px 10px black;
+}
+
+.content {
+  padding-top: 102px;
+}
+
+#home-strip{
+    background-color: #18d26e;
+  
+}
+
+#home-strip a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+}
+
+.hero-section{
+    text-align: center;
+    padding: 5%;
+    background-image: url("./assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section h1{
+    color: #18d26e;
+    font-size: 4em;
+}
+
+.hero-section p{
+    font-size: 2.3em;
+    color: #fff;
+}
+
+.unique-section{
+    text-align: center;
+}
+
+.unique-section h1{
+    color: #18d26e;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    width: 20%;
+    padding: 1%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px 5px rgb(201, 201, 201);
+    border-radius: 20px;
+}
+
+.img-container{
+    width: 100%;
+
+}
+
+.img-container img{
+    width: 100%;
+    
+    /* object-fit: cover; */
+}
+
+ul{
+    list-style: none;
+}
+
+#how-works{
+    position: relative;
+    margin: 0 auto;
+   background-color: #000000;
+   color: #FFFFFF;
+   margin: 5% 0%;
+}
+
+#how-works h1{
+    margin: auto;
+    color: #18d26e;
+    text-align: center;
+}
+
+/* #how-works::before{
+    content: '';  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.3;
+    background-image: url('assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;    
+} */
+
+.list{
+    padding-left: 10%;
+}
+
+.IoT-container{
+    text-align: center;
+    padding: 0% 5% 5%;
+  }
+  .IoT-container h1{
+    color: #3BB11E;
+  }
+  .IoT-image-container{
+    width: 100%;
+  }
+
+  .IoT-image-container img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .platform-core{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+  }
+
+  .img-container-platform{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .items{
+    width: 20%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 3px 3px rgb(196, 196, 196);
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .img-container-platform img{
+    width: 100%;
+    
+  }
+
+  .items button{
+    list-style-type: none;
+    border-style: none;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: #3BB11E;
+  }
+
+  .app-library-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly   ;
+  }
+
+  .app-items{
+    width: 30%;
+    box-shadow: 0px 0px 4px 4px rgb(187, 187, 187);
+    margin-top: 20px;
+    text-align: center;
+
+  }
+
+  .img-container-library{
+    width: 50%;
+    margin: auto;
+  }
+  .img-container-library img{
+    width: 100%;
+  }
+

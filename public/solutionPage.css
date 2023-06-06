@@ -209,7 +209,7 @@ nav li ul {
 } */
 
 .hero-section h1{
-    color: green;
+    color: #fff;
     font-size: 50px;
     font-weight: bold;
 }
@@ -270,8 +270,6 @@ nav li ul {
     padding-bottom: 60px;
     background-repeat: no-repeat;
 }
-
-
 
 .get-more-container h1{
     padding-top: 40px;
@@ -354,6 +352,13 @@ nav li ul {
     height: 485px;
     top: 13%;
     left: 25%;
+  }
+
+  .content-seperator{
+    height: 5px;
+    width: 1%;
+    margin: auto;
+    background-color: #18d26e;
   }
   
   .IoT-container{
