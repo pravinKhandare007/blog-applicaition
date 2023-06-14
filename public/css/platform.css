@@ -190,7 +190,7 @@ nav li ul {
 .hero-section{
     text-align: center;
     padding: 5%;
-    background-image: url("./assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");   
+    background-image: url("/public/assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");   
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -276,7 +276,7 @@ ul{
   top: 0px;
   height: 100%;
   z-index: -1;
-  background-image: url("assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");
+  background-image: url("/public/assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   opacity: 1;
