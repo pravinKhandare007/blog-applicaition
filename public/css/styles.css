@@ -260,6 +260,29 @@ nav li ul{
   background-size: 500px 500px;
 }
 
+.IoT-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-container{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3,minmax(250px,250px));
+  grid-template-columns: repeat(autofill,minmax(250px,250px));
+}
+
+.grid-items{
+  width: 30%;
+}
+
+.grid-items .grid-img-container{
+  width: 100%;
+}
+
+.grid-img-container img{
+  width: 50%;
+}
 
 
 
