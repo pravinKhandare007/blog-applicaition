@@ -265,24 +265,135 @@ nav li ul{
   margin: 0 auto;
 }
 
-.grid-container{
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(3,minmax(250px,250px));
-  grid-template-columns: repeat(autofill,minmax(250px,250px));
+.flex-container{
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin:0 auto;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
-.grid-items{
-  width: 30%;
+.flex-items{
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px rgb(193, 192, 192);
+  padding: 0.5em;
+  cursor: pointer;
 }
 
-.grid-items .grid-img-container{
+.flex-items:hover{
+  box-shadow: 0px 0px 8px 8px grey;
+  transition: 0.3s;
+}
+.flex-items h3{
+  margin: 0;
+}
+
+.flex-img-container{
+  width: 50%;
+  margin: 1em auto;
+  margin-bottom: 0;
+}
+
+.flex-img-container img{
   width: 100%;
 }
 
-.grid-img-container img{
-  width: 50%;
+
+.customer-partner-section{
+  margin: 4em;
 }
+.flex-container-customers-partners{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.items{
+  width: 400px;
+  box-shadow: 0px 0px 5px 5px rgb(190, 188, 188);
+  text-align: center;
+  border-radius: 20px;
+  margin: 2em;
+  padding: 1em;
+  
+}
+
+.items a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #0ACF83;
+  padding: 0.5em;
+  border-radius: 100px;
+  color: #fff;
+}
+
+.img-container{
+  width: 80%;
+  
+  margin: 2em auto;
+}
+
+.img-container img{
+  width: 100%;
+  
+}
+.p-align p{
+  padding-bottom: 2.5em;
+}
+
+.alignClass{
+  width: 67%;
+}
+
+.flex-wrapper{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.blog{
+  width: 200%;
+}
+
+.img-wrapper{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.img-wrapper img{
+  width: 50%;
+  
+}
+
+.news-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.news{
+  width: 300px;
+  box-shadow: 0px 0px 5px 5px grey;
+  padding: 1em;
+  margin: 1em;
+}
+
+.vertical-flex{
+  flex-direction: column;
+}
+
+.releases{
+  width: 300px;
+  padding: 1em;
+  box-shadow:0px 0px 5px 5px grey ;
+  margin: 1em;
+}
+
 
 
 
