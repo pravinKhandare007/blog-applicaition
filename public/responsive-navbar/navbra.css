@@ -17,24 +17,35 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    border: 2px solid red;
+    height: 80px;
 }
 
 .dropdown{
     display: inline-block;
     padding: 1em;
     position: relative;
+    height: 100%;
 }   
 
 .dropdown-menu{
     display: none;
     position: absolute;
+    top: 100%;
 }
 
-/* to center the nav link */
-nav{
+.platform-links-container{
     display: flex;
-    /* align-items: center; */
+    gap: 1em;
 }
+
+/* req a demo button */
+.req-btn a{
+    text-decoration: none;
+    padding: 0.5em;
+    background-color: green;
+}
+
 
 .nav-toggle-label{
     display: none;
@@ -50,6 +61,7 @@ span{
 
 .dropdown:hover .dropdown-menu{
     display: block;
+    width: 400px;
 }
 
 @media (max-width: 750px){
@@ -112,6 +124,12 @@ span{
     .dropdown a span{
        position: absolute;
        left: 90%;
+    }
+
+    .dropdown:hover .dropdown-menu{
+        /* display: block;
+        position: relative; */
+        display: none;
     }
 
 }
