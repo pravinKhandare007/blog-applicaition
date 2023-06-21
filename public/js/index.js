@@ -2,17 +2,21 @@ window.onscroll = function () {
     myFunction();
 }
 
+var dropdownArrows = document.getElementsByClassName('dropdown-arrow');
+
+for (var i = 0; i < dropdownArrows.length; i++) {
+  dropdownArrows[i].addEventListener('click', function(event) {
+    console.log("clicked");
+    event.preventDefault();
+    var dropdownMenu = this.parentNode.nextElementSibling;
+    console.log(dropdownMenu);
+    dropdownMenu.classList.toggle('show');
+  });
+}
 
 let bottomNavbar = document.getElementById("bottom-navbar-container");
 let bottomNavbarTopPosition = bottomNavbar.offsetTop;
 let contentContainer = document.getElementById("content-container");
-
-// couraseal 
-let courasel1 = document.getElementById("courasel-1");
-let courasel2 = document.getElementById("courasel-2");
-let courasel3 = document.getElementById("courasel-3");
-
-
 
 function myFunction() {
     console.log("scrolling")
@@ -27,11 +31,12 @@ function myFunction() {
 };
 
 
-let sliderContainer = document.getElementById("slider-container");
+let sliderContainer = document.getElementById("container");
 
 sliderContainer.addEventListener("mousemove",function(event) {
+    console.log("mouse over");
     var x = event.clientX - sliderContainer.offsetLeft;
-    let fore = document.getElementById("fore");
+    let fore = document.getElementById("foreground-img");
     fore.style.width = `${x}px`;
 });
 

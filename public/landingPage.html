@@ -7,274 +7,282 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div id="entire-page">
-    <header>
-      <nav class="top-navbar">
+
+    <div class="top-navbar">
+      <ul>
+        <li><a href="#">Helpdesk</a></li>
+        <li><a href="./customers.html">Contact Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+
+    <header id="bottom-navbar-container">
+      <div>
+        <div class="logo">
+          <img src="http://dashboard.senselive.in/assets/senselive.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
         <ul>
-          <li><a href="#">Helpdesk</a></li>
-          <li><a href="./customers.html">Contact Us</a></li>
-          <li><a href="./blog.html">Blog</a></li>
+          <li class="dropdown">
+            <a href="#">Solution <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></span></a>
+            <div class="dropdown-menu">
+              <a href="">
+                <h3>SenseLive industry 4.0 solutions</h3>
+              </a>
+              <p>
+                <a href="#">Assets and Machine Monitoring</a> <br>
+                <a href="#">Production Efficiency</a> <br>
+                <a href="">Production Visibility and Order Tracking</a> <br>
+                <a href="">Retrofitting of Industrial Machinery</a> <br>
+                <a href="">Condition Based Maintenance and Predictive Maintenance</a> <br>
+                <hr>
+                <a href="">Solutions for machine builders and distributors</a> <br>
+                <a href="">Solutions for ERP/MES integrators</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Platform <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu" id="platform-left">
+              <a href="">
+                <h3>SenseLive IoT and AI Platform</h3>
+              </a>
+              <div class="platform-links-container">
+                <div class="dropdown-menu-item">
+                  <h3><a href="">SenseLive Edge AI Layer</a></h3>
+                  <p>
+                    <a href="">Zero Agent</a> <br>
+                    <a href="">SenseLive AI</a> <br>
+                    <a href="">Zero Box</a>
+                  </p>
+
+                </div>
+                <div class="dropdown-menu-item">
+                  <h3><a href="">SeneLive PLatform Functionalities</a></h3>
+                  <p>
+                    <a href="">Device Management</a> <br>
+                    <a href="">Data Storage</a><br>
+                    <a href="">No Code Configurator</a>
+                  </p>
+                </div>
+                <div class="dropdown-menu-item">
+                  <h3><a href="">Industrial Iot Apps</a></h3>
+                  <p>
+                    <a href="">Machine Monitoring</a><br>
+                    <a href="">Machine Maintenance</a><br>
+                    <a href="">Machine Control</a><br>
+                    <a href="">Production Insights</a><br>
+                    <a href="">Production tracking</a><br>
+                    <a href="">Custom app</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="dropdown">
+            <a href="#">Customers <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="#">Customer Overview</a> <br>
+                <a href="#">Customer Case Studies</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Resources <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="">Brouchers</a> <br>
+                <a href="">White Papers</a> <br>
+                <a href="">On Demand Webinar</a> <br>
+                <a href="">Blogs</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">About <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="">ABOUT US</a> <br>
+                <a href="">PARTNERS</a><br>
+                <a href="">CAREERS</a><br>
+                <a href="">EVENTS</a><br>
+                <a href="">CERTIFICATIONS</a><br>
+                <a href="">AWARDS</a><br>
+                <a href="">PRESS ROOM</a><br>
+                <a href="">CONTACT US</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown req-btn"><a href="#">Request a demo</a></li>
         </ul>
       </nav>
-      <div id="bottom-navbar-container" class="flexbox-container">
-        <!-- <div class="brand"><img src="logo.jpg"></div> -->
-        <div class="brand"><img id="logo" src="http://dashboard.senselive.in/assets/senselive.png" alt=""></div>
-        <nav class="bottom-navbar">
-          <ul>
-            <li class="dropdown">
-              <a href="#">Solutions</a>&nbsp;
-              <ul class="dropdown-menu">
-                <li><a href="#">
-                    <div style="color: rgb(63, 214, 63); text-decoration: none; text-align: center; font-size: large;">
-                      INDUSTRIAL IOT SOLUTIONS</div>
-                  </a></li>
-                <div>
-                  <li><a href="#" style="font-size: 15px;">Production Monitoring</a></li>
-                </div>
-                <li><a href="#" style="font-size: 15px;">Energy Consumption Monitoring</a></li>
-                <li><a href="#" style="font-size: 15px;">Retrofitting of Industrial Machinery</a></li>
-                <li><a href="#" style="font-size: 15px;">Predictive Maintenance</a></li>
-                <li><a href="#" style="font-size: 15px;">Asset Tracking</a></li>
-                <li><a href="#" style="font-size: 15px;">Indusrial IoT Products</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Products</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">Product 1</a></li>
-                <li><a href="#" style="font-size: 15px;">Product 2</a></li>
-                <li><a href="#" style="font-size: 15px;">Product 3</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Platform</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">
-                    <h1 style="color: rgb(63, 214, 63); text-decoration: none; cursor: pointer;font-size: 20px;">
-                      SENSELIVE INDUSTRIAL IoT PLATFORM</h1>
-                  </a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE EDGE DEVICES</a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE CLOUD CORE</a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE INDUSTRIAL IoT APPS</a></li>
-                <li><a href="#" style="font-size: 15px;">SERVICES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Customers</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">CUSTOMERS OVERVIEW</a></li>
-                <li><a href="#" style="font-size: 15px;">CASE STUDIES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Resources</a>
-              <ul class="dropdown-menu">
-                <div>
-                  THIS IS CHANGE NOT NEEDED
-                </div>
-                <li><a href="#" style="font-size: 15px;">WHITE PAPERS</a></li>
-                <li><a href="#" style="font-size: 15px;">ON-DEMAND WEBINARS</a></li>
-                <li><a href="#" style="font-size: 15px;">BLOG</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#">About</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">ABOUT US</a></li>
-                <li><a href="#" style="font-size: 15px;">PARTNERS</a></li>
-                <li><a href="#" style="font-size: 15px;">CAREERS</a></li>
-                <li><a href="#" style="font-size: 15px;">EVENTS</a></li>
-                <li><a href="#" style="font-size: 15px;">CERTIFICATIONS</a></li>
-                <li><a href="#" style="font-size: 15px;">AWARDS</a></li>
-                <li><a href="#" style="font-size: 15px;">PRESS ROOM</a></li>
-                <li><a href="#" style="font-size: 15px;">CONTACT US</a></li>
-              </ul>
-            </li>
-            <button class="btn-rounded">Request a demo</button>
-          </ul>
-        </nav>
-      </div>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span><i class="fa-solid fa-bars" style="color: #48d515;"></i></span>
+        <span><i class="fa-solid fa-xmark" style="color: #48d515;"></i></span>
+      </label>
     </header>
+
     <div id="content-container">
       <div class="home-strip">
         <a href="#">home</a>
       </div>
-      <div id="content-block-1">
-        <p>We connect every machine <br>
-          or industrial product. <br>
-          In an easy, fast and secure way.</p>
-        <button type="button" onclick="window.location.href='https://www.google.com/'">
-          Discover SenseLive
-        </button>
+      <div class="hero-section">
+        <p>
+          We connect any industrial machine. <br>
+          In an easy, fast and secure way. <br>
+          In less than 3 hours.
+        </p>
+        <a href="#">Discover SenseLive</a>
       </div>
-      <div id="strip-below-1">
-
-      </div>
-      <div id="content-block-2" class="bg-image">
-        <div id="p-container">
-          <h1>Transform your conventional factory <br> into a smart one with just a click.</h1>
-          <br>
-          <p>
-            What sets us apart as the top choice for your needs? <br><br>
-            Our system offers clear, concise factory insights without human interference, <br>
-            displayed in easy-to-read dashboards and reports. <br>
-            Our solution is also highly compatible and easily installed on new and old machines. <br>
-
-            What if you have problems?
-          </p> <br>
-          <button id="content-block-2-button">
-            SEE HOW IT WORKS
-          </button>
-        </div>
-      </div>
-      <div id="slider-section">
-        <h1>Get more from your machines </h1>
-        <p>Produce more. Control more. Analyze more. Simply get more. <br>
-          With Zerynth you squeeze the juice from your machinery to the last drop.</p>
-        <div class='container' id="slider-container">
-          <div class='img background-img'></div>
-          <div class='img foreground-img' id="fore"></div>
-          <div id="visual-slider"></div>
-          <!-- <div id="arrow">
-            <img src="./assets/arrows.png" alt="">
-          </div> -->
-        </div>
-
-      </div>
-      <div id="content-block-3">
-        <h3>Industrial IoT’s SenseLive solutions
-        </h3>
-        <div class="grid-layout">
-          <div class="item">
-            <img src="./assets/production-moni.png" alt="">
-            <h3>Production Monitoring</h3>
-          </div>
-          <div class="item">
-            <img src="./assets/energy.png" alt="">
-            <h3>Energy Consumption Monitoring</h3>
-          </div>
-          <div class="item">
-            <img src="./assets/retrofitting.png" alt="">
-            <h3>Retrofitting of industrial machinary</h3>
-          </div>
-          <div class="item">
-            <img src="./assets/maintenanceicon.png" alt="">
-            <h3>Predictive maintenance</h3>
-          </div>
-          <div class="item">
-            <img src="./assets/assetnavicon.png" alt="">
-            <h3>Asset tracking</h3>
-          </div>
-          <div class="item">
-            <img src="./assets/indus-Iot-product.png" alt="">
-            <h3>Industrial IoT products</h3>
-          </div>
-        </div>
-      </div>
-      <div id="info-section">
-        <div>
-          <img src="./assets/ourclie2.png" class="imgMain">
-          <h1>
-            Customers
-          </h1>
-          <h2>SenseLive Technologies is the leading provider of end-to-end IoT solutions for industries seeking to
-            optimize their processes in the Fourth Industrial Revolution. 
-            
-          </h2>
-          <footer>
-            <button style="border-radius: 100px;
-                background-color: #18d26e;
-                color: white;
-                align-items: center;
-                border: 5px;
-                justify-content: center;
-                padding: 14px;
-                ;">See Our Customers</button>
-
-          </footer>
-
-        </div>
-
-        <div>
-          <img src="./assets/hero-bg.png" class="imgMain">
-          <h1>
-            Partners
-          </h1>
-          <h2>SenseLive Technologies is the leading provider of end-to-end IoT solutions for industries seeking to
-            optimize their processes in the Fourth Industrial Revolution.
-            
-          </h2>
-          <footer>
-            <button style="border-radius: 100px;
-                background-color: #18d26e;
-                align-items: center;
-                color: white;
-                border: 5px;
-                justify-content: center;
-                padding: 13px;
-                ;">Our Partners</button>
-          </footer>
-
-        </div>
-        <div>
-          <img src="./assets/hero-bg.png" class="imgMain">
-          <h1>
-            Learn more
-          </h1>
-          <h2>SenseLive Technologies is the leading provider of end-to-end IoT solutions for industries seeking to
-            optimize their processes in the Fourth Industrial Revolution.
-          </h2>
-          <footer>
-            <button style="border-radius: 100px;
-                background-color: #18d26e;
-                color: white;
-                align-items: center;
-                border: 5px;
-                justify-content: center;
-                padding: 13px;
-                ;">Learn More</button>
-          </footer>
-
-        </div>
-      </div>
-      <div id="news-section-heading">
-        <h1>Latest news</h1>
-      </div>
-      <div id="news-section">
-        <div class="news-blog">
-          <div id="div-1">
-            <img src="./assets/Applications-of-Mobile-Apps-for-the-Internet-of-Things-IoT-02.png" alt="">
-            <div>
-              <h3>IoT technologies: what are the main trends of 2023?</h3>
-              <p>We hear about IoT every day now. But what is it? What are the benefits of its implementation? And what
-                are the expected trends for 2023?</p>
-            </div>
-          </div>
-          <div id="div-2">
-            <img src="./assets/Applications-of-Mobile-Apps-for-the-Internet-of-Things-IoT-02.png" alt="">
-            <div>
-              <h3>IoT technologies: what are the main trends of 2023?</h3>
-              <p>We hear about IoT every day now. But what is it? What are the benefits of its implementation? And what
-                are the expected trends for 2023?</p>
-            </div>
-          </div>
-          <button type="button" class="news-button">All blog posts</button>
-        </div>
-        <div class="news-releases">
-          <div id="div-3">
-            <h3>The industrial world goes to the Edge</h3>
-            <p>By 2025, 75% of data companies generate will be processed locally, close to the point of generation
-              (on-edge), and cloud systems will increasingly support in-depth analysis of aggregated data.
+      <div class="how-it-works-container">
+        <div class="how-it-works">
+          <div>
+            <h1>
+              We can transform your traditional <br>
+              company into a 4.0 company <br>
+              How do we do it?
+            </h1>
+            <p>
+              Our IoT solutions guarantee the best user experience possible. <br>
+              You have our promise that everything will be fast, <br>
+              secure, and easy to implement.
+            </p>
+            <p>
+              What if you have problems? <br>
+              Our experts are always at your service.
             </p>
           </div>
-          <div id="div-4">
-            <h3>Integrations between IT and OT systems for a holistic view of Factory 4.0</h3>
-            <p>SenseLive renewed IoT platform based on AI offers more than just monitoring energy consumption and
-              operational status devices.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="slider-container">
+          <h1>Get more from your machines</h1>
+          <p>
+            Produce more. Control more. Analyze more. Simply get more. <br>
+            With Zerynth you squeeze the juice from your machinery to the last drop.
+          </p>
+          <div class="container" id="container">
+            <div class='img background-img'></div>
+            <div class='img foreground-img' id="foreground-img"></div>
+            <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
           </div>
-          <button type="button" class="news-releases-button">All press releases</button>
+        </div>
+      </div>
+      <div>
+        <div class="IoT-container">
+          <h3>Industrial IoT`s SenseLive Solutions</h3>
+          <div>
+            <div class="flex-container">
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Asset and machine Monitoring
+                </h3>
+              </div>
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Production efficiency
+                </h3>
+              </div>
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Production visibility and order trackings
+                </h3>
+              </div>
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Energy consumption monitoring and optimiztion
+                </h3>
+              </div>
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Condition based Maintenance and Predictive Maintenance
+                </h3>
+              </div>
+              <div class="flex-items">
+                <div class="flex-img-container">
+                  <img src="./assets/production-moni.png" alt="">
+                </div>
+                <h3>
+                  Retrofitting of induxtry machinary
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="customer-partner-section">
+        <div class="flex-container-customers-partners">
+          <div class="items p-align">
+            <div class="img-container">
+              <img src="./assets/clients.png" alt="">
+            </div>
+            <h3>
+              SenseLive Customers
+            </h3>
+            <p>
+              SenseLive helps customers to drive their industrial IoT transformation and deliver innovative products to
+              the market.
+            </p>
+            <a href="#">See our customers</a>
+          </div>
+          <div class="items p-align">
+            <div class="img-container alignClass">
+              <img src="./assets/partners.png" alt="">
+            </div>
+            <h3>
+              Discover our partners
+            </h3>
+            <p>
+              We continually foster relationships with industrial experts, technology leaders, and consultants to
+              deliver results that exceed our clients’ expectations.
+            </p>
+            <a href="#">SenseLive Partners</a>
+          </div>
+          <div class="items">
+            <div class="img-container">
+              <img src="./assets/clients.png" alt="">
+            </div>
+            <h3>
+              Get more value from your machines- <br>
+              Discover SenseLive Platform
+            </h3>
+            <p>
+              Discover how to increase visibility on your production, streamline your processes, and enhance the value
+              of your connected industrial products with the SenseLive IoT & AI Platform.
+            </p>
+            <a href="#">Watch the Webinar</a>
+          </div>
         </div>
       </div>
       <div class="aboutus">
@@ -333,74 +341,74 @@
       </div>
       <footer>
         <div class="footer-container">
-            <div class="footer-section">
-                <h3>IoT Solutions</h3>
-                <ul>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Industrial IoT</a></li>
-                    <li><a href="#">IoT Connected Products</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Products</h3>
-                <ul>
-                    <li><a href="#">IoT Platform</a></li>
-                    <li><a href="#">Hardware</a></li>
-                    <li><a href="#">Software</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Customers</h3>
-                <ul>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Helpdesk</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">White Papers</a></li>
-                    <li><a href="#">Developer Tools</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
+          <div class="footer-section">
+            <h3>IoT Solutions</h3>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Industrial IoT</a></li>
+              <li><a href="#">IoT Connected Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">IoT Platform</a></li>
+              <li><a href="#">Hardware</a></li>
+              <li><a href="#">Software</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Customers</h3>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Helpdesk</a></li>
+              <li><a href="#">Case Studies</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">White Papers</a></li>
+              <li><a href="#">Developer Tools</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </footer>
 
-    <footer id="footer" class="fusion-footer-copyright-area">
+      <footer id="footer" class="fusion-footer-copyright-area">
         <div class="fusion-row">
-            <div class="fusion-copyright-content">
+          <div class="fusion-copyright-content">
 
-                <div class="fusion-copyright-notice" style="padding-bottom: 0px;">
-                    <div>
-                        <div>
-                          <img style="float: left; width: 100px; height: 100px;" src="./assets/logofinal.png" height="150"
-                          width="240" alt="Zerynth">
-                        </div>
-                        
-                        <span style="float: right; margin-top: 36px; margin-right: 64px;">© 2015 -
-                            <script>document.write(new Date().getFullYear());</script>2023 SenseLive S.p.A.
-                            | VAT IT02188290502
-                            | <a href="/website-terms">Website Terms</a>
-                            | <a href="/privacy">Privacy Policy</a>
-                            | <a href="/license">License</a>
-                            | <a href="/terms-license">Terms &amp; EULA</a>
-                        </span>
-                    </div>
+            <div class="fusion-copyright-notice" style="padding-bottom: 0px;">
+              <div>
+                <div>
+                  <img style="float: left; width: 100px; height: 100px;" src="./assets/logofinal.png" height="150"
+                    width="240" alt="Zerynth">
                 </div>
 
-            </div> <!-- fusion-fusion-copyright-content -->
+                <span style="float: right; margin-top: 36px; margin-right: 64px;">© 2015 -
+                  <script>document.write(new Date().getFullYear());</script>2023 SenseLive S.p.A.
+                  | VAT IT02188290502
+                  | <a href="/website-terms">Website Terms</a>
+                  | <a href="/privacy">Privacy Policy</a>
+                  | <a href="/license">License</a>
+                  | <a href="/terms-license">Terms &amp; EULA</a>
+                </span>
+              </div>
+            </div>
+
+          </div> <!-- fusion-fusion-copyright-content -->
         </div> <!-- fusion-row -->
-    </footer>
+      </footer>
     </div>
     <script src="./js/index.js"></script>
 </body>

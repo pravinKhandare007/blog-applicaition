@@ -191,7 +191,7 @@ nav li ul {
     padding: 10%;
     text-align: center;
     position: relative;
-    background-image: url("./assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");
+    background-image: url("/public/assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: 100%;
@@ -265,7 +265,7 @@ nav li ul {
 
 .get-more-container{
     text-align: center;
-    background-image: url("./assets/patrick-hendry-6xeDIZgoPaw-unsplash.jpg");
+    background-image: url("/public/assets/patrick-hendry-6xeDIZgoPaw-unsplash.jpg");
     background-size: 100% 600px;
     padding-bottom: 60px;
     background-repeat: no-repeat;
