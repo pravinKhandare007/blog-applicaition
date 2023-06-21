@@ -31,12 +31,14 @@ header{
 .dropdown-menu{
     display: none;
     position: absolute;
-    top: 100%;
+    top: 120%;
+    width: 400px;
 }
 
 .platform-links-container{
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 /* req a demo button */
@@ -61,7 +63,7 @@ span{
 
 .dropdown:hover .dropdown-menu{
     display: block;
-    width: 400px;
+    width: 500px;
 }
 
 @media (max-width: 750px){
@@ -76,7 +78,7 @@ span{
     nav{
         position: absolute;
         z-index: 1;
-        background-color: aqua;
+        background-color: white;
         width: 100%;
         display: none;
     }
@@ -95,6 +97,7 @@ span{
         font-size: 1.25em;
         display: block;
         position: relative;
+        color: black;
     }
 
     .nav-toggle:checked ~ nav{
@@ -123,13 +126,22 @@ span{
 
     .dropdown a span{
        position: absolute;
-       left: 90%;
+       left: 92%;
+       border: 2px solid black;
+       width: 1em;
+       
     }
 
     .dropdown:hover .dropdown-menu{
-        /* display: block;
-        position: relative; */
-        display: none;
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: left;
+    }
+
+    .show{
+        display: block;
+
     }
 
 }
