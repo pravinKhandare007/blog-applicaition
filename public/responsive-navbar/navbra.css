@@ -61,9 +61,19 @@ span{
     display: none;
 }
 
-.dropdown:hover .dropdown-menu{
+nav a{
+    text-decoration: none;
+    font-size: 1em;
     display: block;
-    width: 500px;
+    position: relative;
+    color: black;
+}
+
+@media (min-width: 751px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        width: 500px;
+    }
 }
 
 @media (max-width: 750px){
@@ -132,16 +142,18 @@ span{
        
     }
 
-    .dropdown:hover .dropdown-menu{
+    /* .dropdown:hover .dropdown-menu{
         display: block;
         position: relative;
         width: 100%;
         text-align: left;
-    }
+    } */
 
-    .show{
-        display: block;
-
-    }
+    .show {
+        display: block !important;
+        text-align: left;
+        position: inherit;
+        /* Add any other desired styles for showing the element */
+      }
 
 }

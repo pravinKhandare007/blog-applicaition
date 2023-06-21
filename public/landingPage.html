@@ -7,93 +7,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <div id="entire-page">
-    <header>
-      <nav class="top-navbar">
+
+    <div class="top-navbar">
+      <ul>
+        <li><a href="#">Helpdesk</a></li>
+        <li><a href="./customers.html">Contact Us</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </ul>
+    </div>
+      
+    
+    <header id="bottom-navbar-container">
+      <div>
+        <div class="logo">
+          <img src="http://dashboard.senselive.in/assets/senselive.png" alt="">
+        </div>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
         <ul>
-          <li><a href="#">Helpdesk</a></li>
-          <li><a href="./customers.html">Contact Us</a></li>
-          <li><a href="./blog.html">Blog</a></li>
+          <li class="dropdown">
+            <a href="#">Solution <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></span></a>
+            <div class="dropdown-menu">
+              <a href=""><h3>SenseLive industry 4.0 solutions</h3></a>
+              <p>
+                <a href="#">Assets and Machine Monitoring</a> <br>
+                <a href="#">Production Efficiency</a> <br>
+                <a href="">Production Visibility and Order Tracking</a> <br>
+                <a href="">Retrofitting of Industrial Machinery</a> <br>
+                <a href="">Condition Based Maintenance and Predictive Maintenance</a> <br>
+                <hr>
+                <a href="">Solutions for machine builders and distributors</a> <br>
+                <a href="">Solutions for ERP/MES integrators</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Platform <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu" id="platform-left">
+              <a href=""><h3>SenseLive IoT and AI Platform</h3></a>
+              <div class="platform-links-container">
+                <div class="dropdown-menu-item">
+                  <h3><a href="">SenseLive Edge AI Layer</a></h3>
+                  <p>
+                    <a href="">Zero Agent</a> <br>
+                    <a href="">SenseLive AI</a> <br>
+                    <a href="">Zero Box</a>
+                  </p>
+
+                </div>
+                <div class="dropdown-menu-item">
+                  <h3><a href="">SeneLive PLatform Functionalities</a></h3>
+                  <p>
+                    <a href="">Device Management</a> <br>
+                    <a href="">Data Storage</a><br>
+                    <a href="">No Code Configurator</a>
+                  </p>
+                </div>
+                <div class="dropdown-menu-item">
+                  <h3><a href="">Industrial Iot Apps</a></h3>
+                  <p>
+                    <a href="">Machine Monitoring</a><br>
+                    <a href="">Machine Maintenance</a><br>
+                    <a href="">Machine Control</a><br>
+                    <a href="">Production Insights</a><br>
+                    <a href="">Production tracking</a><br>
+                    <a href="">Custom app</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="dropdown">
+            <a href="#">Customers <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="#">Customer Overview</a> <br>
+                <a href="#">Customer Case Studies</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">Resources <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="">Brouchers</a> <br>
+                <a href="">White Papers</a> <br>
+                <a href="">On Demand Webinar</a> <br> 
+                <a href="">Blogs</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#">About <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <p>
+                <a href="">ABOUT US</a> <br>
+                <a href="">PARTNERS</a><br>
+                <a href="">CAREERS</a><br>
+                <a href="">EVENTS</a><br>
+                <a href="">CERTIFICATIONS</a><br>
+                <a href="">AWARDS</a><br>
+                <a href="">PRESS ROOM</a><br>
+                <a href="">CONTACT US</a>
+              </p>
+            </div>
+          </li>
+          <li class="dropdown req-btn"><a href="#">Request a demo</a></li>
         </ul>
       </nav>
-      <div id="bottom-navbar-container" class="flexbox-container">
-        <!-- <div class="brand"><img src="logo.jpg"></div> -->
-        <div class="brand"><img id="logo" src="http://dashboard.senselive.in/assets/senselive.png" alt=""></div>
-        <nav class="bottom-navbar">
-          <ul>
-            <li class="dropdown">
-              <a href="#">Solutions</a>&nbsp;
-              <ul class="dropdown-menu">
-                <li><a href="#">
-                    <div style="color: rgb(63, 214, 63); text-decoration: none; text-align: center; font-size: large;">
-                      INDUSTRIAL IOT SOLUTIONS</div>
-                  </a></li>
-                <div>
-                  <li><a href="#" style="font-size: 15px;">Production Monitoring</a></li>
-                </div>
-                <li><a href="#" style="font-size: 15px;">Energy Consumption Monitoring</a></li>
-                <li><a href="#" style="font-size: 15px;">Retrofitting of Industrial Machinery</a></li>
-                <li><a href="#" style="font-size: 15px;">Predictive Maintenance</a></li>
-                <li><a href="#" style="font-size: 15px;">Asset Tracking</a></li>
-                <li><a href="#" style="font-size: 15px;">Indusrial IoT Products</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Products</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">Product 1</a></li>
-                <li><a href="#" style="font-size: 15px;">Product 2</a></li>
-                <li><a href="#" style="font-size: 15px;">Product 3</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Platform</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">
-                    <h1 style="color: rgb(63, 214, 63); text-decoration: none; cursor: pointer;font-size: 20px;">
-                      SENSELIVE INDUSTRIAL IoT PLATFORM</h1>
-                  </a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE EDGE DEVICES</a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE CLOUD CORE</a></li>
-                <li><a href="#" style="font-size: 15px;">SENSELIVE INDUSTRIAL IoT APPS</a></li>
-                <li><a href="#" style="font-size: 15px;">SERVICES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Customers</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">CUSTOMERS OVERVIEW</a></li>
-                <li><a href="#" style="font-size: 15px;">CASE STUDIES</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#">Resources</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">WHITE PAPERS</a></li>
-                <li><a href="#" style="font-size: 15px;">ON-DEMAND WEBINARS</a></li>
-                <li><a href="#" style="font-size: 15px;">BLOG</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#">About</a>
-              <ul class="dropdown-menu">
-                <li><a href="#" style="font-size: 15px;">ABOUT US</a></li>
-                <li><a href="#" style="font-size: 15px;">PARTNERS</a></li>
-                <li><a href="#" style="font-size: 15px;">CAREERS</a></li>
-                <li><a href="#" style="font-size: 15px;">EVENTS</a></li>
-                <li><a href="#" style="font-size: 15px;">CERTIFICATIONS</a></li>
-                <li><a href="#" style="font-size: 15px;">AWARDS</a></li>
-                <li><a href="#" style="font-size: 15px;">PRESS ROOM</a></li>
-                <li><a href="#" style="font-size: 15px;">CONTACT US</a></li>
-              </ul>
-            </li>
-            <button class="btn-rounded">Request a demo</button>
-          </ul>
-        </nav>
-      </div>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span><i class="fa-solid fa-bars" style="color: #48d515;"></i></span>
+        <span><i class="fa-solid fa-xmark" style="color: #48d515;"></i></span>
+      </label>
     </header>
+
     <div id="content-container">
       <div class="home-strip">
         <a href="#">home</a>
@@ -134,11 +170,10 @@
             Produce more. Control more. Analyze more. Simply get more. <br>
             With Zerynth you squeeze the juice from your machinery to the last drop.
           </p>
-          <div class="slider">
-            <div class="img bg-before">
-            </div>
-            <div class="img bg-after">
-            </div>
+          <div class="container" id="container">
+            <div class='img background-img'></div>
+            <div class='img foreground-img' id="foreground-img"></div>
+            <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
           </div>
         </div>
       </div>
@@ -212,7 +247,8 @@
               SenseLive Customers
             </h3>
             <p>
-              SenseLive helps customers to drive their industrial IoT transformation and deliver innovative products to the market.
+              SenseLive helps customers to drive their industrial IoT transformation and deliver innovative products to
+              the market.
             </p>
             <a href="#">See our customers</a>
           </div>
@@ -224,7 +260,8 @@
               Discover our partners
             </h3>
             <p>
-              We continually foster relationships with industrial experts, technology leaders, and consultants to deliver results that exceed our clients’ expectations.
+              We continually foster relationships with industrial experts, technology leaders, and consultants to
+              deliver results that exceed our clients’ expectations.
             </p>
             <a href="#">SenseLive Partners</a>
           </div>
@@ -237,7 +274,8 @@
               Discover SenseLive Platform
             </h3>
             <p>
-              Discover how to increase visibility on your production, streamline your processes, and enhance the value of your connected industrial products with the SenseLive IoT & AI Platform.
+              Discover how to increase visibility on your production, streamline your processes, and enhance the value
+              of your connected industrial products with the SenseLive IoT & AI Platform.
             </p>
             <a href="#">Watch the Webinar</a>
           </div>
@@ -258,7 +296,8 @@
                 Solutions for mes and erp integration in the Era of Industrial IoT
               </h3>
               <p>
-                In the context of Industry 4.0, the integration between Enterprise Resource Planning (ERP) and Manufacturing Execution System
+                In the context of Industry 4.0, the integration between Enterprise Resource Planning (ERP) and
+                Manufacturing Execution System
               </p>
             </div>
             <div class="news">
@@ -269,7 +308,8 @@
                 Extract Valuable Data from Industrial Machinery. Interview with an Expert.
               </h3>
               <p>
-                Streamlining production processes, managing maintenance, and remotely monitoring industrial plants in real-time are among the primary needs
+                Streamlining production processes, managing maintenance, and remotely monitoring industrial plants in
+                real-time are among the primary needs
               </p>
             </div>
             <!-- <div class="news">
@@ -285,7 +325,8 @@
                 The industrial world goes to the Edge:
               </h3>
               <p>
-                By 2025, 75% of data companies generate will be processed locally, close to the point of generation (on-edge), and cloud systems will increasingly support in-depth analysis of aggregated data.
+                By 2025, 75% of data companies generate will be processed locally, close to the point of generation
+                (on-edge), and cloud systems will increasingly support in-depth analysis of aggregated data.
               </p>
             </div>
             <div class="releases">
@@ -296,7 +337,8 @@
                 Integrations between IT and OT systems for a holistic view of Factory 4.0:
               </h3>
               <p>
-                Zerynth’s renewed IoT platform based on AI offers more than just monitoring energy consumption and operational status devices.
+                Zerynth’s renewed IoT platform based on AI offers more than just monitoring energy consumption and
+                operational status devices.
               </p>
             </div>
             <!-- <div class="releases">

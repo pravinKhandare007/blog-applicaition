@@ -17,8 +17,10 @@ var dropdownArrows = document.getElementsByClassName('dropdown-arrow');
 
 for (var i = 0; i < dropdownArrows.length; i++) {
   dropdownArrows[i].addEventListener('click', function(event) {
+    console.log("clicked");
     event.preventDefault();
     var dropdownMenu = this.parentNode.nextElementSibling;
+    console.log(dropdownMenu);
     dropdownMenu.classList.toggle('show');
   });
 }
