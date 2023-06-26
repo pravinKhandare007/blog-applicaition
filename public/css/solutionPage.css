@@ -194,7 +194,7 @@ nav li ul {
     background-image: url("/public/assets/jezael-melgoza-HYQvV8wWX18-unsplash.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
-    background-size: 100%;
+    background-size:cover;
 }
 
 /* .hero-section::before{
@@ -222,11 +222,13 @@ nav li ul {
 .container{
     display: flex;
     text-align: center;
-       
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .item{
-    padding: 10%;   
+    padding: 5%;  
+    width: 500px; 
 }
 
 .container button{
@@ -266,7 +268,7 @@ nav li ul {
 .get-more-container{
     text-align: center;
     background-image: url("/public/assets/patrick-hendry-6xeDIZgoPaw-unsplash.jpg");
-    background-size: 100% 600px;
+    background-size:cover;
     padding-bottom: 60px;
     background-repeat: no-repeat;
 }
@@ -279,12 +281,14 @@ nav li ul {
 
 .flex-container{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 
 .items{
     padding: 20px;
+    width: 300px;
 }
 
 .items h2{
@@ -294,6 +298,50 @@ nav li ul {
 .items p{
     color: #FFFFFF;
 }
+
+
+.IoT-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.flex-items {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 5px rgb(193, 192, 192);
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.flex-items:hover {
+  box-shadow: 0px 0px 8px 8px grey;
+  transition: 0.3s;
+}
+
+.flex-items h3 {
+  margin: 0;
+}
+
+.flex-img-container {
+  width: 50%;
+  margin: 1em auto;
+  margin-bottom: 0;
+}
+
+.flex-img-container img {
+  width: 100%;
+}
+
 
 .content-block-3-container{
     padding-top: 50px;

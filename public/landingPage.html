@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   <div id="entire-page">
-
     <div class="top-navbar">
       <ul>
         <li><a href="#">Helpdesk</a></li>
@@ -174,7 +175,7 @@
             Produce more. Control more. Analyze more. Simply get more. <br>
             With Zerynth you squeeze the juice from your machinery to the last drop.
           </p>
-          <div class="container" id="container">
+          <div class="container_slider" id="container">
             <div class='img background-img'></div>
             <div class='img foreground-img' id="foreground-img"></div>
             <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
@@ -239,8 +240,6 @@
         </div>
       </div>
 
-
-
       <div class="customer-partner-section">
         <div class="flex-container-customers-partners">
           <div class="items p-align">
@@ -285,32 +284,101 @@
           </div>
         </div>
       </div>
-      <div class="aboutus">
-        <div class="column1" style="justify-items: center;">
-          <img style="height: 300px;" src="./assets/hero-bg.png" alt="SenseLive Image">
-        </div>
-        <div class="gap" style="background-color: black; width: 4px; height: 150px; margin-top: 88px;"></div>
-        <div class="column1">
-          <div class="title" style="--awb-text-color:#2389d1;--awb-sep-color:#dadbd9;--awb-font-size:28px;">
-            <h1>About us</h1>
+
+      <div class="container" style="margin-bottom: 300px;">
+        <div class="row" style="margin-top: 10%;">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="height: 137%;">
+              <img class="card-img-top" src="/public/assets/ourclie2.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h3 class="card-title">IoT technologies: what are the main trends of 2023?</h3>
+                <p class="card-text" style="margin-bottom: 3%;">We hear about IoT every day now. But what is it? What
+                  are the benefits of
+                  its implementation? And what
+                  are the expected trends for 2023?</p>
+
+              </div>
+            </div>
           </div>
-          <!-- <hr> -->
-          <!-- <div class="fusion-separator fusion-full-width-sep" style="margin-left: auto;margin-right: auto;margin-top:20px;margin-bottom:16px;width:100%;"></div> -->
-          <div style="height: 200px; font-size: 18px;">
-            <p style="margin-left: 40px;">Founded in 2015, Zerynth has grown steadily. Today it has 40+ team members
-              with deep IoT expertise and
-              industry knowledge with over 150 customers across many industries: from manufacturing to agriculture
-              to
-              energy to logistics.</p>
-            <p style="margin-left: 40px;">Zerynth is based in Pisa, Italy, but also is active in international
-              projects, and foresees an expansion
-              both in EU and non-EU countries during the next three years.</p>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+            <div class="card" style="height: 137%;">
+              <img class="card-img-top" src="/public/assets/ourclie2.png" alt="Card image" style="width:100%">
+              <div class="card-body">
+                <h3 class="card-title">IoT technologies: what are the main trends of 2023?</h3>
+                <p class="card-text">We hear about IoT every day now. But what is it? What are the benefits of
+                  its implementation? And what
+                  are the expected trends for 2023?</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12" style="height: 100px;">
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">The industrial world goes to the Edge</h3>
+                    <p class="card-text">By 2025, 75% of data companies generate will be processed locally,
+                      close to the point of generation
+                      (on-edge), and cloud systems will increasingly support in-depth analysis of
+                      aggregated data.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title">Integrations between IT and OT systems for a holistic view of
+                      Factory 4.0</h3>
+                    <p class="card-text">SenseLive renewed IoT platform based on AI offers more than just
+                      monitoring energy consumption and
+                      operational status devices.</p>
+                    <a href="#" class="btn btn-success">All press releases</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
-          <p style="font-size: 22px;"><button><a href="#">Learn more</a></button></p>
         </div>
-
       </div>
+      <div class="container" style="margin-bottom: 300px ;">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12">
+            <img src="hero-bg.png" alt="" width="100%" height="98%">
+          </div>
+
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12">
+            <h1 style="margin-top: 1rem; color: green;">About us</h1>
+            <br>
+            <div class="vl">
+              <b>
+                <p style="margin-left: 40px; font-size: 18px;">Founded in 2015, Zerynth has grown steadily.
+                  Today it has 40+ team members
+                  with deep IoT expertise and
+                  industry knowledge with over 150 customers across many industries: from manufacturing to
+                  agriculture
+                  to
+                  energy to logistics.</p>
+                <p style="margin-left: 40px; font-size: 18px;">Zerynth is based in Pisa, Italy, but also is
+                  active in international
+                  projects, and foresees an expansion
+                  both in EU and non-EU countries during the next three years.</p>
+              </b>
+              <br>
+              <button type="button" class="btn btn-success btn-lg">Learn more</button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
       <div class="container-2">
         <div class="column">
           <h1>Get Started!</h1>
@@ -339,6 +407,8 @@
           </div>
         </div>
       </div>
+
+
       <footer>
         <div class="footer-container">
           <div class="footer-section">
