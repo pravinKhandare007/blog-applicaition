@@ -1,67 +1,67 @@
-*,*::after,*::before{
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
 }
-.logo{
+
+.logo {
     width: 80px;
     height: 80px;
 }
 
-.logo img{
+.logo img {
     width: 100%;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     border: 2px solid red;
     height: 80px;
 }
 
-.dropdown{
+.dropdown {
     display: inline-block;
     padding: 1em;
     position: relative;
     height: 100%;
-}   
+}
 
-.dropdown-menu{
+.dropdown-menu-1 {
     display: none;
     position: absolute;
     top: 120%;
     width: 400px;
 }
 
-.platform-links-container{
+.platform-links-container {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
 }
 
 /* req a demo button */
-.req-btn a{
+.req-btn a {
     text-decoration: none;
     padding: 0.5em;
     background-color: green;
 }
 
-
-.nav-toggle-label{
+.nav-toggle-label {
     display: none;
 }
 
-input{
+input {
     display: none;
 }
 
-span{
+span {
     display: none;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     font-size: 1em;
     display: block;
@@ -69,23 +69,24 @@ nav a{
     color: black;
 }
 
-@media (min-width: 751px){
-    .dropdown:hover .dropdown-menu{
+@media (min-width: 751px) {
+    .dropdown:hover .dropdown-menu-1 {
         display: block;
         width: 500px;
     }
 }
 
-@media (max-width: 750px){
-    span{
+@media (max-width: 750px) {
+    span {
         display: inline-block;
     }
-    header{
+
+    header {
         display: block;
         position: relative;
     }
-    
-    nav{
+
+    nav {
         position: absolute;
         z-index: 1;
         background-color: white;
@@ -93,7 +94,7 @@ nav a{
         display: none;
     }
 
-    nav ul{
+    nav ul {
         margin: 0;
         padding: 0;
         display: flex;
@@ -102,7 +103,7 @@ nav a{
         text-align: center;
     }
 
-    nav a{
+    nav a {
         text-decoration: none;
         font-size: 1.25em;
         display: block;
@@ -110,15 +111,15 @@ nav a{
         color: black;
     }
 
-    .nav-toggle:checked ~ nav{
+    .nav-toggle:checked ~ nav {
         display: block;
     }
 
-    .nav-toggle{
+    .nav-toggle {
         display: none;
     }
 
-    .nav-toggle-label{
+    .nav-toggle-label {
         position: absolute;
         top: 0;
         left: 90%;
@@ -130,19 +131,18 @@ nav a{
         overflow: hidden;
     }
 
-    .nav-toggle-label span:nth-child(2){
+    .nav-toggle-label span:nth-child(2) {
         background-color: blueviolet;
     }
 
-    .dropdown a span{
-       position: absolute;
-       left: 92%;
-       border: 2px solid black;
-       width: 1em;
-       
+    .dropdown a span {
+        position: absolute;
+        left: 92%;
+        border: 2px solid black;
+        width: 1em;
     }
 
-    /* .dropdown:hover .dropdown-menu{
+    /* .dropdown:hover .dropdown-menu-1 {
         display: block;
         position: relative;
         width: 100%;
@@ -154,6 +154,5 @@ nav a{
         text-align: left;
         position: inherit;
         /* Add any other desired styles for showing the element */
-      }
-
+    }
 }

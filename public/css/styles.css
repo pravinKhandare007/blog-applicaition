@@ -45,6 +45,7 @@ body {
 .top-navbar ul li a{
   text-decoration: none;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -52,9 +53,6 @@ header {
   background-color: #FFFFFF;
   width: 100%;
 }
-
-
-
 
 /* new navbar start */
 @media (min-width: 751px) {
@@ -76,12 +74,12 @@ header {
   }
   .dropdown {
     display: inline-block;
-    padding: 2em 1em;
+    padding: 1.7em 1.25em;
     position: relative;
     height: fit-content;
   }
 
-  .dropdown-menu {
+  .dropdown-menu-1 {
     display: none;
     position: absolute;
     top: 100%;
@@ -90,12 +88,12 @@ header {
     padding: 1em;
   }
 
-  .dropdown-menu h3{
+  .dropdown-menu-1 h3{
     color: var(--bg-btn-color);
   }
 
   .platform-position {
-    left: -100px;
+    left: -500px;
   }
 
   .platform-links-container {
@@ -110,7 +108,6 @@ header {
     padding: 0.5em;
     background-color: green;
   }
-
 
   .nav-toggle-label {
     display: none;
@@ -132,8 +129,7 @@ header {
     color: black;
   }
 
-
-  .dropdown:hover .dropdown-menu {
+  .dropdown:hover .dropdown-menu-1 {
     display: block;
     border: 2px solid green;
     width: max-content;
@@ -142,14 +138,21 @@ header {
   .dropdown:hover #platform-left{
     left:-300px;
   }
+
+  .how-it-works {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10em;
+    position: relative;
+  }
 }
 
 @media (max-width: 750px) {
-
   .slider-container{
     display: none;
   }
-  .dropdown-menu {
+  
+  .dropdown-menu-1 {
     display: none;
     position: absolute;
     top: 100%;
@@ -192,7 +195,6 @@ header {
     width: 100%;
     text-align: left;
     gap: 1em;
-    /* padding: 3em; */
     list-style-type: none;
   }
 
@@ -241,9 +243,125 @@ header {
     /* Add any other desired styles for showing the element */
   }
 
+  .how-it-works{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    position: relative;
+  }
 }
 
+
 /* new navbar ends */
+
+/* new slider start */
+
+.body{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  min-height: 100vh;
+}
+.imgBx{
+  width: 400px;
+  height: 400px;
+  background: #000;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.imgBx input[type='checkbox']{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.imgBx input[type='checkbox']:checked ~ span.bg1::before{
+ transform: rotateY(180deg);
+}
+
+
+
+span {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+span.bg1 {
+  left: 0;
+  background:  url("/public/assets/ab.jpg");
+}
+
+span.bg1::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("/public/assets/st.jpg");
+  transform-origin: right;
+  transition: 2s;
+  backface-visibility: hidden;
+}
+
+span.bg2 {
+  right: 0;
+  background:  url("/public/assets/st.jpg");
+  background-position-x: 200px;
+}
+
+span.bg2::before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:  url("/public/assets/ab.jpg");
+  background-position-x: 200px;
+  transform-origin: left;
+  transition: 2s;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+.imgBx input[type='checkbox']:checked ~ span.bg2::before{
+  transform: rotateY(360deg);
+}
+
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px; ;
+  transition: 1s;
+  box-shadow: 0 25px 25px rgba(0,0,0,0.1),
+  0 0 0 800px #ffa011;
+  pointer-events: none;
+}
+
+.imgBx input[type='checkbox']:checked ~ span.bg{
+  box-shadow: 0 25px 25px rgba(0,0,0,0.1),
+  0 0 0 800px #a0d621;
+}
+
+
+/* new slider ends  */
+
+
 .home-strip {
   width: 100%;
   height: 20px;
@@ -296,12 +414,7 @@ header {
   position: relative;
 }
 
-.how-it-works {
-  width: 60%;
-  margin: 0 auto;
-  padding: 10em;
-  position: relative;
-}
+
 
 .how-it-works div {
   padding-left: 1em;

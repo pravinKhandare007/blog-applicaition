@@ -40,10 +40,3 @@ sliderContainer.addEventListener("mousemove",function(event) {
     fore.style.width = `${x}px`;
 });
 
-// sliderContainer.addEventListener("click",function(event) {
-//     var x = event.clientX - sliderContainer.offsetLeft;
-//     let fore = document.getElementById("fore");
-//     fore.style.width = `${x}px`;
-
-//     slider.style.left = `${x}px`;
-// });

@@ -25,7 +25,7 @@
     </div>
 
 
-    <header id="bottom-navbar-container">
+    <header>
       <div>
         <div class="logo">
           <img src="http://dashboard.senselive.in/assets/senselive.png" alt="">
@@ -36,10 +36,8 @@
         <ul>
           <li class="dropdown">
             <a href="#">Solution <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></span></a>
-            <div class="dropdown-menu">
-              <a href="">
-                <h3>SenseLive industry 4.0 solutions</h3>
-              </a>
+            <div class="dropdown-menu-1"> <!-- Updated class name -->
+              <h3>SenseLive industry 4.0 solutions</h3>
               <p>
                 <a href="#">Assets and Machine Monitoring</a> <br>
                 <a href="#">Production Efficiency</a> <br>
@@ -54,13 +52,11 @@
           </li>
           <li class="dropdown">
             <a href="#">Platform <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu" id="platform-left">
-              <a href="">
-                <h3>SenseLive IoT and AI Platform</h3>
-              </a>
+            <div class="dropdown-menu-1 platform-position"> <!-- Updated class name -->
+              <p><a href="">SenseLive IoT and AI Platform</a></p>
               <div class="platform-links-container">
                 <div class="dropdown-menu-item">
-                  <h3><a href="">SenseLive Edge AI Layer</a></h3>
+                  <h4><a href="">SenseLive Edge AI Layer</a></h4>
                   <p>
                     <a href="">Zero Agent</a> <br>
                     <a href="">SenseLive AI</a> <br>
@@ -68,8 +64,8 @@
                   </p>
 
                 </div>
-                <div class="dropdown-menu-item">
-                  <h3><a href="">SeneLive PLatform Functionalities</a></h3>
+                <div class="dropdown-menu-item platform-position">
+                  <h4><a href="">SeneLive PLatform Functionalities</a></h4>
                   <p>
                     <a href="">Device Management</a> <br>
                     <a href="">Data Storage</a><br>
@@ -77,7 +73,7 @@
                   </p>
                 </div>
                 <div class="dropdown-menu-item">
-                  <h3><a href="">Industrial Iot Apps</a></h3>
+                  <h4><a href="">Industrial Iot Apps</a></h4>
                   <p>
                     <a href="">Machine Monitoring</a><br>
                     <a href="">Machine Maintenance</a><br>
@@ -93,37 +89,35 @@
           </li>
           <li class="dropdown">
             <a href="#">Customers <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu-1"> <!-- Updated class name -->
               <p>
-                <a href="#">Customer Overview</a> <br>
-                <a href="#">Customer Case Studies</a>
+                <a href="#">Customer Overview</a>
+                <a href="#">Customer Case studies</a>
               </p>
             </div>
           </li>
           <li class="dropdown">
             <a href="#">Resources <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu-1">
               <p>
-                <a href="">Brouchers</a> <br>
-                <a href="">White Papers</a> <br>
-                <a href="">On Demand Webinar</a> <br>
+                <a href="#">Brouchers</a>
+                <a href="">White Papers</a>
+                <a href="">On Demand Webinar</a>
                 <a href="">Blogs</a>
               </p>
             </div>
           </li>
           <li class="dropdown">
             <a href="#">About <span class="dropdown-arrow"><i class="fa-solid fa-caret-down"></i></a>
-            <div class="dropdown-menu">
-              <p>
-                <a href="">ABOUT US</a> <br>
-                <a href="">PARTNERS</a><br>
-                <a href="">CAREERS</a><br>
-                <a href="">EVENTS</a><br>
-                <a href="">CERTIFICATIONS</a><br>
-                <a href="">AWARDS</a><br>
-                <a href="">PRESS ROOM</a><br>
-                <a href="">CONTACT US</a>
-              </p>
+            <div class="dropdown-menu-1">
+              <a href="">ABOUT US</a>
+              <a href="">PARTNERS</a>
+              <a href="">CAREERS</a>
+              <a href="">EVENTS</a>
+              <a href="">CERTIFICATIONS</a>
+              <a href="">AWARDS</a>
+              <a href="">PRESS ROOM</a>
+              <a href="">CONTACT US</a>
             </div>
           </li>
           <li class="dropdown req-btn"><a href="#">Request a demo</a></li>
@@ -169,7 +163,15 @@
       </div>
 
       <div>
-        <div class="slider-container">
+        <div class="body">
+          <div class="imgBx">
+            <input type="checkbox">
+            <span class="bg1"></span>
+            <span class="bg2"></span>
+            <span class="bg3"></span>
+          </div>
+        </div>
+        <!-- <div class="slider-container">
           <h1>Get more from your machines</h1>
           <p>
             Produce more. Control more. Analyze more. Simply get more. <br>
@@ -180,7 +182,7 @@
             <div class='img foreground-img' id="foreground-img"></div>
             <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
           </div>
-        </div>
+        </div> -->
       </div>
       <div>
         <div class="IoT-container">
@@ -285,77 +287,59 @@
         </div>
       </div>
 
-      <div class="container" style="margin-bottom: 300px;">
-        <div class="row" style="margin-top: 10%;">
+      <div class="container">
+        <div class="row" style="margin-top: 150px;">
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="height: 137%;">
-              <img class="card-img-top" src="/public/assets/ourclie2.png" alt="Card image" style="width:100%">
+            <div class="card" style="height: 100%;">
+              <img class="card-img-top" src="./assets/Applications-of-Mobile-Apps-for-the-Internet-of-Things-IoT-02.png"
+                alt="Card image" style="width:100%">
               <div class="card-body">
                 <h3 class="card-title">IoT technologies: what are the main trends of 2023?</h3>
-                <p class="card-text" style="margin-bottom: 3%;">We hear about IoT every day now. But what is it? What
-                  are the benefits of
+                <p class="card-text" style="margin-bottom: 3%;">We hear about IoT every day now. But what is it?
+                  What are the benefits of
                   its implementation? And what
                   are the expected trends for 2023?</p>
-
               </div>
             </div>
           </div>
-
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-            <div class="card" style="height: 137%;">
-              <img class="card-img-top" src="/public/assets/ourclie2.png" alt="Card image" style="width:100%">
+            <div class="card" style="height: 100%;">
+              <img class="card-img-top" src="./assets/Applications-of-Mobile-Apps-for-the-Internet-of-Things-IoT-02.png"
+                alt="Card image" style="width:100%">
               <div class="card-body">
                 <h3 class="card-title">IoT technologies: what are the main trends of 2023?</h3>
                 <p class="card-text">We hear about IoT every day now. But what is it? What are the benefits of
                   its implementation? And what
                   are the expected trends for 2023?</p>
               </div>
-
             </div>
           </div>
-
-          <div class="col-xl-4  col-lg-4 col-md-4 col-sm-12" style="height: 100px;">
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">The industrial world goes to the Edge</h3>
-                    <p class="card-text">By 2025, 75% of data companies generate will be processed locally,
-                      close to the point of generation
-                      (on-edge), and cloud systems will increasingly support in-depth analysis of
-                      aggregated data.</p>
-                  </div>
-                </div>
+          <div class="col-lg-4 col-md-4 col-s-12">
+            <div class="card" style="height: 80%;">
+              <div class="card-body">
+                <h3 class="card-title">The industrial world goes to the Edge</h3>
+                <p class="card-text">By 2025, 75% of data companies generate will be processed locally,
+                  close to the point of generation
+                  (on-edge), and cloud systems will increasingly support in-depth analysis of
+                  aggregated data.</p>
+                <hr style="height:5px;border-width:0; background-color: black; margin-top: 8%;">
+                <h3 class="card-title">Integrations between IT and OT systems for a holistic view of
+                  Factory 4.0</h3>
+                <p class="card-text">SenseLive renewed IoT platform based on AI offers more than just
+                  monitoring energy consumption and
+                  operational status devices.</p>
+                <a href="#" class="btn btn-success">All press releases</a>
               </div>
             </div>
-            <br>
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title">Integrations between IT and OT systems for a holistic view of
-                      Factory 4.0</h3>
-                    <p class="card-text">SenseLive renewed IoT platform based on AI offers more than just
-                      monitoring energy consumption and
-                      operational status devices.</p>
-                    <a href="#" class="btn btn-success">All press releases</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-      <div class="container" style="margin-bottom: 300px ;">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12">
-            <img src="hero-bg.png" alt="" width="100%" height="98%">
-          </div>
 
-          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12">
-            <h1 style="margin-top: 1rem; color: green;">About us</h1>
-            <br>
+        <div class="row" style="margin-top: 8%;">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12" style="height: 400px;">
+            <img src="./assets/Applications-of-Mobile-Apps-for-the-Internet-of-Things-IoT-02.png" alt="" width="100%" height="98%">
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12" style="height: 440px;">
+            <h1 style=" color: green;">About us</h1>
             <div class="vl">
               <b>
                 <p style="margin-left: 40px; font-size: 18px;">Founded in 2015, Zerynth has grown steadily.
@@ -370,43 +354,41 @@
                   projects, and foresees an expansion
                   both in EU and non-EU countries during the next three years.</p>
               </b>
-              <br>
-              <button type="button" class="btn btn-success btn-lg">Learn more</button>
+              <button type="button" class="btn btn-success btn-md">Learn more</button>
             </div>
-
           </div>
-
         </div>
-      </div>
 
-      <div class="container-2">
-        <div class="column">
-          <h1>Get Started!</h1>
-          <hr>
-          <div class="content-2">
+        <div class="row" style="margin-top: 4%;">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12"
+            style=" background-color:  whitesmoke; border: 2px solid white; height: 300px;">
+            <h1 style="margin-top: 40px;">Get Started!</h1>
+
+            <hr>
             <p>Book your personalized demo and speak with one of our IoT experts to discover the Zerynth Platform’s
-              key
-              features and the benefits you can realize.</p>
+              key features and the benefits you can realize.</p>
+
+            <a href="#" class="btn btn-success" style="margin-top: 10%;">Request demo</a>
           </div>
-          <div>
-            <button class="btn-rounded">Request demo</button>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-s-12 col-xs-12"
+            style=" background-color: whitesmoke; border: 2px solid white; height: 300px;">
+            <h1 style="margin-top: 40px;">Contact Us</h1>
+
+            <hr>
+            <p>For any question or inquiry, please contact us and a member of our team will reach out to you soon!</p>
+
+            <a href="#" class="btn btn-success" style="margin-top: 10%;">Contact us</a>
           </div>
+
         </div>
 
-        <div class="gap"></div>
 
-        <div class="column">
-          <h1>Contact Us</h1>
-          <hr>
-          <div class="content-2">
-            <p>For any question or inquiry, please contact us and a member of our team will reach out to you soon!
-            </p>
-          </div>
-          <div>
-            <button class="btn-rounded">Contact us</button>
-          </div>
-        </div>
+
+
       </div>
+      <br>
+      <br>
+
 
 
       <footer>
