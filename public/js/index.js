@@ -5,6 +5,8 @@ window.onscroll = function () {
 var dropdownArrows = document.getElementsByClassName('dropdown-arrow');
 
 for (var i = 0; i < dropdownArrows.length; i++) {
+    console.log("for loop "+ i);
+    console.log(dropdownArrows[i]);
   dropdownArrows[i].addEventListener('click', function(event) {
     console.log("clicked");
     event.preventDefault();
@@ -14,7 +16,7 @@ for (var i = 0; i < dropdownArrows.length; i++) {
   });
 }
 
-let bottomNavbar = document.getElementById("bottom-navbar-container");
+let bottomNavbar = document.getElementById("header");
 let bottomNavbarTopPosition = bottomNavbar.offsetTop;
 let contentContainer = document.getElementById("content-container");
 
@@ -31,12 +33,12 @@ function myFunction() {
 };
 
 
-let sliderContainer = document.getElementById("container");
+// let sliderContainer = document.getElementById("container");
 
-sliderContainer.addEventListener("mousemove",function(event) {
-    console.log("mouse over");
-    var x = event.clientX - sliderContainer.offsetLeft;
-    let fore = document.getElementById("foreground-img");
-    fore.style.width = `${x}px`;
-});
+// sliderContainer.addEventListener("mousemove",function(event) {
+//     console.log("mouse over");
+//     var x = event.clientX - sliderContainer.offsetLeft;
+//     let fore = document.getElementById("foreground-img");
+//     fore.style.width = `${x}px`;
+// });
 
