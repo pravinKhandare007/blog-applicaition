@@ -1,0 +1,14 @@
+:root{
+    --font-size-h1: 3rem;
+    --font-size-h2: 2.25rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h5: 1rem;
+    --font-size-h6: 0.875rem;
+    --font-size-heading-p:3rem;
+    --font-size-normal-p:1rem;
+}
+
+.anyClass{
+    font-size: var(--font-size-h5);
+}
