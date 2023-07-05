@@ -1,0 +1,24 @@
+.poster{
+    background-image: url(bck.jpeg);
+    background-size: cover;
+    background-color: #d8d8d8;
+    background-blend-mode: multiply;
+    
+
+}
+.butn {
+    
+    width: 50%;
+    background-color: #0A801F;
+    color: white;
+    font-size: large;
+    text-align: center;
+    
+  }
+  
+ 
+  
+  .carousel-inner img {
+    width: 50%;
+    height: 100%;
+  }
