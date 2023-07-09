@@ -487,8 +487,15 @@ span.bg2::before {
   isolation: isolate; 
 }
 
-.how-it-works{
-  
+.how-it-works a{
+  text-decoration: none;
+  background-color: var(--btn-new-color);
+  border-radius: 100px;
+  letter-spacing: 1px;
+  padding: 0.5em 1.75em;
+  color: #f5fcf3;
+  display: inline-block;
+  margin-top: 2em;
 }
 .how-it-works div {
   padding-left: 1em;
@@ -581,8 +588,9 @@ span.bg2::before {
   text-align: center;
 }
 
-.IoT-container h3{
-  color: #18d26e;
+.IoT-container h2{
+  color: #3BB11E;
+  margin-bottom: 2em;
 }
 
 .flex-container {
