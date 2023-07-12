@@ -307,6 +307,7 @@ header {
     position: relative;
     isolation: isolate;
     background-color: #000;
+    
   }
 }
 
