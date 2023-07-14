@@ -440,10 +440,10 @@
   }
 
   /* taken from platform page start*/
-
   .app-library-container h2{
     color: var(--heading-color);
   }
+
   .app-library-flex-container{
     display: flex;
     flex-wrap: wrap;
